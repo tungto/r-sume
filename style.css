@@ -6,15 +6,18 @@
 html,
 body {
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   /* font-weight: bold; */
 }
 li {
   list-style-type: none;
 }
+a {
+  text-decoration: underline;
+}
 a:link {
   text-decoration: none;
-  color: black;
+  color: rgb(15, 24, 39);
 }
 
 a:visited {
@@ -60,6 +63,7 @@ h5 {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 50px;
+  height: 100vh;
 }
 .intro {
   text-align: center;
@@ -105,6 +109,7 @@ h5 {
   margin-left: 5%;
   margin-right: 5%;
   padding-bottom: 50px;
+  height: 100vh;
 }
 .part {
   margin-top: 20px;
@@ -112,8 +117,8 @@ h5 {
 .edu h5 {
   text-transform: capitalize;
 }
-.edu span:last-child {
-  color: #d1d5d8;
+span.time {
+  color: #3c3737;
   font-size: 80%;
   text-align: right;
   display: block;
@@ -124,4 +129,23 @@ h5 {
   padding: 10px;
   background-color: #d1d5d8;
   border-radius: 3px;
+}
+
+.experience .responsibilities {
+  display: flex;
+  flex-direction: column;
+}
+
+.responsibilities li,
+.edu li {
+  list-style-type: circle;
+  margin-left: 2rem;
+}
+.project li {
+  list-style-type: circle;
+  margin-left: 2rem;
+}
+.project li a {
+  font-weight: 700;
+  line-height: 1.5rem;
 }
